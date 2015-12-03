@@ -1,0 +1,5 @@
+<html>
+  <body>
+    <h1>hello from <%= node['fqdn'] %> <%= node["network"]["interfaces"].keys.map { |iface_name| node["network"]["interfaces"][iface_name]["addresses"].keys[1] }%></h1>
+  </body>
+</html>
